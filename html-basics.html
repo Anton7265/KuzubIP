@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы HTML</title>
+    <link rel="stylesheet" href="styles/html-basis.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Введение</a>
+            <a href="downloadvscode.html">Установка VS Code</a>
+            <a href="use-vscode.html">Работа с VS Code</a>
+            <a href="html-basics.html">Основы HTML</a>
+            <a href="css-basics.html">Основы CSS</a>
+            <a href="code-example.html">Примеры кода</a>
+            <a href="github-guide.html">Публикация на GitHub</a>
+            <a href="sours.html">Источники</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Основы HTML</h1>
+        
+        <div class="content-box">
+            <p>HTML (HyperText Markup Language) - это язык разметки, который используется для создания структуры веб-страницы. Он состоит из тегов, которые определяют различные элементы страницы.</p>
+            
+            <h2>Базовая структура HTML-документа</h2>
+            <div class="tag-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Название страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Содержимое страницы --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </div>
+            
+            <h2>Основные HTML-теги</h2>
+            
+            <table>
+                <tr>
+                    <th>Тег</th>
+                    <th>Описание</th>
+                    <th>Пример</th>
+                </tr>
+                <tr>
+                    <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                    <td>Заголовки разного уровня (h1 - самый важный)</td>
+                    <td>&lt;h1&gt;Главный заголовок&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Абзац текста</td>
+                    <td>&lt;p&gt;Это абзац текста.&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Ссылка</td>
+                    <td>&lt;a href="https://example.com"&gt;Ссылка&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Изображение</td>
+                    <td>&lt;img src="image.jpg" alt="Описание"&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</td>
+                    <td>Списки (маркированный и нумерованный)</td>
+                    <td>&lt;ul&gt;&lt;li&gt;Пункт 1&lt;/li&gt;&lt;li&gt;Пункт 2&lt;/li&gt;&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Блочный контейнер</td>
+                    <td>&lt;div&gt;Блок содержимого&lt;/div&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>Строчный контейнер</td>
+                    <td>&lt;span&gt;Часть текста&lt;/span&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;header&gt;</td>
+                    <td>Шапка сайта или раздела</td>
+                    <td>&lt;header&gt;Шапка сайта&lt;/header&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;footer&gt;</td>
+                    <td>Подвал сайта или раздела</td>
+                    <td>&lt;footer&gt;Подвал сайта&lt;/footer&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;nav&gt;</td>
+                    <td>Навигационное меню</td>
+                    <td>&lt;nav&gt;&lt;a href="#"&gt;Ссылка 1&lt;/a&gt;&lt;/nav&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;section&gt;</td>
+                    <td>Секция документа</td>
+                    <td>&lt;section&gt;Секция контента&lt;/section&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;article&gt;</td>
+                    <td>Самостоятельный раздел контента</td>
+                    <td>&lt;article&gt;Статья&lt;/article&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</td>
+                    <td>Таблица, строка, ячейка, заголовок ячейки</td>
+                    <td>&lt;table&gt;&lt;tr&gt;&lt;td&gt;Ячейка&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;form&gt;, &lt;input&gt;, &lt;button&gt;</td>
+                    <td>Форма, поле ввода, кнопка</td>
+                    <td>&lt;form&gt;&lt;input type="text"&gt;&lt;button&gt;Отправить&lt;/button&gt;&lt;/form&gt;</td>
+                </tr>
+            </table>
+            
+            <h2>Атрибуты HTML-тегов</h2>
+            <p>Теги могут иметь атрибуты, которые предоставляют дополнительную информацию:</p>
+            <ul>
+                <li><strong>class</strong> - определяет один или несколько классов для элемента (используется в CSS)</li>
+                <li><strong>id</strong> - уникальный идентификатор элемента</li>
+                <li><strong>style</strong> - встроенные CSS-стили</li>
+                <li><strong>src</strong> - путь к файлу (для img, script и др.)</li>
+                <li><strong>href</strong> - URL-адрес (для ссылок)</li>
+                <li><strong>alt</strong> - альтернативный текст (для изображений)</li>
+                <li><strong>width/height</strong> - ширина и высота элемента</li>
+            </ul>
+            
+            <div class="tag-example">
+&lt;a href="https://example.com" class="link" id="main-link" style="color: blue;"&gt;Пример ссылки&lt;/a&gt;
+            </div>
+            
+            <p>Это основные теги и атрибуты HTML, которые позволят вам создать структуру веб-страницы. В следующем разделе мы изучим CSS, который используется для оформления и стилизации HTML-элементов.</p>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

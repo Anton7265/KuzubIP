@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Основы CSS</title>
+    <link rel="stylesheet" href="styles/css-basis.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Введение</a>
+            <a href="downloadvscode.html">Установка VS Code</a>
+            <a href="use-vscode.html">Работа с VS Code</a>
+            <a href="html-basics.html">Основы HTML</a>
+            <a href="css-basics.html">Основы CSS</a>
+            <a href="code-example.html">Примеры кода</a>
+            <a href="github-guide.html">Публикация на GitHub</a>
+            <a href="sours.html">Источники</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Основы CSS</h1>
+        
+        <div class="content-box">
+            <p>CSS (Cascading Style Sheets) - это язык стилей, который определяет, как HTML-элементы должны отображаться на странице. CSS позволяет контролировать цвет, шрифты, отступы, размеры, расположение элементов и многое другое.</p>
+            
+            <h2>Способы подключения CSS</h2>
+            <p>Существует три основных способа подключения CSS к HTML:</p>
+            
+            <div class="property">
+                <div class="property-name">1. Внешняя таблица стилей (рекомендуемый способ)</div>
+                <div class="code-example">
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+                </div>
+                <p>Стили хранятся в отдельном файле с расширением .css</p>
+            </div>
+            
+            <div class="property">
+                <div class="property-name">2. Внутренние стили (в теге &lt;style&gt;)</div>
+                <div class="code-example">
+&lt;head&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                </div>
+                <p>Стили прописываются непосредственно в HTML-файле</p>
+            </div>
+            
+            <div class="property">
+                <div class="property-name">3. Встроенные стили (атрибут style)</div>
+                <div class="code-example">
+&lt;p style="color: red;"&gt;Этот текст красный.&lt;/p&gt;
+                </div>
+                <p>Стили применяются к конкретному элементу (не рекомендуется для больших проектов)</p>
+            </div>
+            
+            <h2>CSS-селекторы</h2>
+            <p>Селекторы определяют, к каким элементам будут применены стили:</p>
+            
+            <table>
+                <tr>
+                    <th>Селектор</th>
+                    <th>Пример</th>
+                    <th>Описание</th>
+                </tr>
+                <tr>
+                    <td>По тегу</td>
+                    <td>p { color: blue; }</td>
+                    <td>Применяется ко всем тегам &lt;p&gt;</td>
+                </tr>
+                <tr>
+                    <td>По классу</td>
+                    <td>.text { font-size: 16px; }</td>
+                    <td>Применяется ко всем элементам с class="text"</td>
+                </tr>
+                <tr>
+                    <td>По id</td>
+                    <td>#header { background: #000; }</td>
+                    <td>Применяется к элементу с id="header"</td>
+                </tr>
+                <tr>
+                    <td>Универсальный</td>
+                    <td>* { margin: 0; }</td>
+                    <td>Применяется ко всем элементам</td>
+                </tr>
+                <tr>
+                    <td>По атрибуту</td>
+                    <td>a[target="_blank"] { color: red; }</td>
+                    <td>Применяется к элементам с указанным атрибутом</td>
+                </tr>
+                <tr>
+                    <td>Групповой</td>
+                    <td>h1, h2, h3 { color: green; }</td>
+                    <td>Применяется ко всем указанным элементам</td>
+                </tr>
+                <tr>
+                    <td>Вложенный</td>
+                    <td>div p { line-height: 1.5; }</td>
+                    <td>Применяется ко всем &lt;p&gt; внутри &lt;div&gt;</td>
+                </tr>
+                <tr>
+                    <td>Дочерний</td>
+                    <td>ul > li { list-style: none; }</td>
+                    <td>Применяется ко всем &lt;li&gt;, которые являются прямыми потомками &lt;ul&gt;</td>
+                </tr>
+            </table>
+            
+            <h2>Основные CSS-свойства</h2>
+            
+            <div class="property">
+                <div class="property-name">Цвет и фон</div>
+                <ul>
+                    <li><strong>color</strong> - цвет текста (например, #ff0000 или red)</li>
+                    <li><strong>background-color</strong> - цвет фона</li>
+                    <li><strong>background-image</strong> - фоновое изображение (url('image.jpg'))</li>
+                    <li><strong>background</strong> - сокращенное свойство для всех фоновых параметров</li>
+                </ul>
+            </div>
+            
+            <div class="property">
+                <div class="property-name">Текст</div>
+                <ul>
+                    <li><strong>font-family</strong> - семейство шрифтов (Arial, sans-serif и др.)</li>
+                    <li><strong>font-size</strong> - размер шрифта (16px, 1em, 100% и др.)</li>
+                    <li><strong>font-weight</strong> - насыщенность шрифта (normal, bold, 100-900)</li>
+                    <li><strong>text-align</strong> - выравнивание текста (left, right, center, justify)</li>
+                    <li><strong>line-height</strong> - высота строки (1.5, 24px и др.)</li>
+                    <li><strong>text-decoration</strong> - оформление текста (underline, none и др.)</li>
+                </ul>
+            </div>
+            
+            <div class="property">
+                <div class="property-name">Блоки</div>
+                <ul>
+                    <li><strong>width</strong> - ширина элемента</li>
+                    <li><strong>height</strong> - высота элемента</li>
+                    <li><strong>margin</strong> - внешние отступы</li>
+                    <li><strong>padding</strong> - внутренние отступы</li>
+                    <li><strong>border</strong> - граница элемента (1px solid black)</li>
+                    <li><strong>border-radius</strong> - скругление углов (5px, 50% и др.)</li>
+                    <li><strong>display</strong> - тип отображения (block, inline, flex, grid и др.)</li>
+                    <li><strong>position</strong> - тип позиционирования (static, relative, absolute, fixed)</li>
+                    <li><strong>box-shadow</strong> - тень элемента (2px 2px 5px rgba(0,0,0,0.3))</li>
+                </ul>
+            </div>
+            
+            <div class="property">
+                <div class="property-name">Flexbox</div>
+                <p>Flexbox - это современный способ расположения элементов:</p>
+                <ul>
+                    <li><strong>display: flex</strong> - включает flex-контейнер</li>
+                    <li><strong>flex-direction</strong> - направление элементов (row, column)</li>
+                    <li><strong>justify-content</strong> - выравнивание по главной оси</li>
+                    <li><strong>align-items</strong> - выравнивание по поперечной оси</li>
+                    <li><strong>flex-wrap</strong> - перенос элементов при нехватке места</li>
+                    <li><strong>gap</strong> - расстояние между элементами</li>
+                </ul>
+            </div>
+            
+            <div class="code-example">
+                <pre>
+                    /* Пример CSS-правила */
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 20px;
+                    background-color: #f5f5f5;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }
+
+                .header {
+                    font-family: 'Arial', sans-serif;
+                    color: #333;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #3498db;
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 4px;
+                    transition: background-color 0.3s;
+                }
+
+                .btn:hover {
+                    background-color: #2980b9;
+                }
+                </pre>                                   
+            </div>
+            
+            <p>Это основные концепции и свойства CSS, которые позволят вам стилизовать вашу веб-страницу. В следующем разделе мы объединим HTML и CSS в практических примерах с подробными комментариями.</p>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

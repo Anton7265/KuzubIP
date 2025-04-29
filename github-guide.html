@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Публикация на GitHub</title>
+    <link rel="stylesheet" href="styles/github.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Введение</a>
+            <a href="downloadvscode.html">Установка VS Code</a>
+            <a href="use-vscode.html">Работа с VS Code</a>
+            <a href="html-basics.html">Основы HTML</a>
+            <a href="css-basics.html">Основы CSS</a>
+            <a href="code-example.html">Примеры кода</a>
+            <a href="github-guide.html">Публикация на GitHub</a>
+            <a href="sours.html">Источники</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Публикация сайта на GitHub Pages</h1>
+        
+        <div class="content-box">
+            <p>GitHub Pages - это бесплатный хостинг для статических сайтов от GitHub. Вот пошаговая инструкция по публикации вашего сайта:</p>      
+            <div class="step">
+                <div class="step-number">Шаг 1: Создание аккаунта на GitHub</div>
+                <p>Перейдите на <a href="https://github.com/" target="_blank">GitHub</a> и зарегистрируйте новый аккаунт, если у вас его еще нет.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Шаг 2: Создание нового репозитория</div>
+                <ol>
+                    <li>Нажмите кнопку "+" в правом верхнем углу и выберите "New repository"</li>
+                    <li>Введите имя репозитория в формате: <code>вашлогин.github.io</code> (например, ivanov.github.io)</li>
+                    <li>Выберите "Public" (публичный репозиторий)</li>
+                    <li>Поставьте галочку "Add a README file"</li>
+                    <li>Нажмите "Create repository"</li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Шаг 3: Загрузка файлов вашего сайта через интерфейс GitHub</div>
+                <ol>
+                    <li>В вашем репозитории нажмите "Add file" → "Upload files"</li>
+                    <li>Перетащите файлы вашего сайта (index.html, стили, изображения и т.д.)</li>
+                    <li>Нажмите "Commit changes"</li>
+                </ol>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Шаг 4: Настройка GitHub Pages</div>
+                <ol>
+                    <li>В репозитории перейдите во вкладку "Settings"</li>
+                    <li>В меню слева выберите "Pages"</li>
+                    <li>В разделе "Source" выберите ветку "main" и папку "/ (root)"</li>
+                    <li>Нажмите "Save"</li>
+                </ol>
+                <p>Через несколько минут ваш сайт будет доступен по адресу: <code>https://вашлогин.github.io</code></p>
+            </div>
+            
+            <div class="note">
+                <strong>Примечание:</strong> Главная страница вашего сайта должна называться <code>index.html</code> и находиться в корневой папке репозитория.
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Шаг 5: Обновление сайта</div>
+                    <p>Когда вы вносите изменения в файлы сайта, вам нужно загрузить их на GitHub:</p>
+                    <p>Через интерфейс GitHub загрузите новые версии файлов</p>
+                </div>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">Шаг 6: Дополнительные настройки (опционально)</div>
+                <p>Вы можете добавить собственный домен к вашему GitHub Pages сайту:</p>
+                <ol>
+                    <li>Купите домен у регистратора (например, reg.ru, nic.ru)</li>
+                    <li>В настройках DNS вашего домена добавьте 4 записи A с IP-адресами GitHub:
+                        <ul>
+                            <li>185.199.108.153</li>
+                            <li>185.199.109.153</li>
+                            <li>185.199.110.153</li>
+                            <li>185.199.111.153</li>
+                        </ul>
+                    </li>
+                    <li>В настройках GitHub Pages укажите ваш домен</li>
+                    <li>Создайте в корне репозитория файл CNAME с именем вашего домена</li>
+                </ol>
+            </div>
+            
+            <p>Поздравляем! Теперь ваш сайт доступен в интернете абсолютно бесплатно. Вы можете продолжать его развивать и обновлять по мере необходимости.</p>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>
