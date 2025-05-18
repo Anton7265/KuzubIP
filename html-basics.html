@@ -29,20 +29,19 @@
             <h2>Базовая структура HTML-документа</h2>
             <div class="tag-example">
                 <pre>
-                    &lt;!DOCTYPE html&gt;
-                    &lt;html lang="ru"&gt;
-                    &lt;head&gt;
-                        &lt;meta charset="UTF-8"&gt;
-                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                        &lt;title&gt;Название страницы&lt;/title&gt;
-                    &lt;/head&gt;
-                    &lt;body&gt;
-                        &lt;!-- Содержимое страницы --&gt;
-                    &lt;/body&gt;
-                    &lt;/html&gt;
+                &lt;!DOCTYPE html&gt;&gt;<span class="comment">&lt;!-- Объявление типа документа --&gt;</span>   
+                &lt;html lang="ru"<!-- -->&gt;<span class="comment">&lt;Корневой элемент HTML-документа с указанием языка (ru - русский) &gt;</span>   
+                &lt;head&gt;<span class="comment">&lt;Секция head содержит метаданные и служебную информацию &gt;</span>   
+                    &lt;meta charset="UTF-8"&gt;<span class="comment">&lt;Установка кодировки символов UTF-8 (поддерживает кириллицу и спецсимволы) &gt;</span>   
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<span class="comment">&lt;Настройка адаптивного отображения на мобильных устройствах:width=device-width - ширина по размеру экрана устройстваinitial-scale=1.0 - масштаб 100% при первой загрузке&gt;</span>   
+                    &lt;title&gt;Название страницы&lt;/title&gt;<span class="comment">&lt;Заголовок страницы (отображается во вкладке браузера)&gt;</span>   
+                &lt;/head&gt;
+                &lt;body&gt;<span class="comment">&lt;Тело документа - видимая часть страницы, где размещается контент&gt;</span>   
+                    &lt;!-- Содержимое страницы --&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;<span class="comment">&lt;Закрывающий тег корневого элемента&gt;</span>   
                 </pre>
             </div>
-            
             
             <h2>Основные HTML-теги</h2>
             
@@ -136,9 +135,6 @@
                 <li><strong>width/height</strong> - ширина и высота элемента</li>
             </ul>
             
-            <div class="tag-example">
-&lt;a href="https://example.com" class="link" id="main-link" style="color: blue;"&gt;Пример ссылки&lt;/a&gt;
-            </div>
             
             <p>Это основные теги и атрибуты HTML, которые позволят вам создать структуру веб-страницы. В следующем разделе мы изучим CSS, который используется для оформления и стилизации HTML-элементов.</p>
         </div>
