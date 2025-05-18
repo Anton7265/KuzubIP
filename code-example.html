@@ -28,33 +28,24 @@
             <p>В этом разделе мы рассмотрим практические примеры объединения HTML и CSS с подробными комментариями к каждой части кода.</p>
             
             <h2>Пример 1: Базовая структура HTML-документа с CSS</h2>
-            
-            <div class="code-block">
-                <span class="tag">&lt;!DOCTYPE html&gt;</span> 
-                <span class="comment">&lt;!-- Объявление типа документа --&gt;</span>
-                <span class="tag">&lt;html</span> 
-                <span class="attribute">lang=</span>
-                <span class="value">"ru"</span>
-                <span class="tag">&gt;</span> 
-                <span class="comment">&lt;!-- Корневой элемент с указанием языка --&gt;</span>
-                <span class="tag">&lt;head&gt;</span>
-                <span class="comment">&lt;!-- Метаданные документа --&gt;</span>
-                <span class="tag">&lt;meta</span> 
-                <span class="attribute">charset=</span>
-                <span class="value">"UTF-8"</span>
-                <span class="tag">&gt;</span> 
-                <span class="comment">&lt;!-- Кодировка символов --&gt;</span>
-                <span class="tag">&lt;meta</span> 
-                <span class="attribute">name=</span>
-                <span class="value">"viewport"</span> 
-                <span class="attribute">content=</span>
-                <span class="value">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>
-                <span class="tag">&lt;title&gt;</span>Мой сайт
-                <span class="tag">&lt;/title&gt;</span> 
-                <span class="comment">&lt;!-- Заголовок вкладки браузера --&gt;</span>
+            <pre>
+<div class="code-block">
+                <span class="tag">&lt;!DOCTYPE html&gt;</span> <span class="comment">&lt;!-- Объявление типа документа --&gt;</span>   
+                <span class="tag">&lt;html</span> <span class="attribute">lang=</span><span class="value">"ru"</span><span class="tag">&gt;</span> <span class="comment">&lt;!-- Корневой элемент с указанием языка --&gt;</span>              
+                <span class="tag">&lt;head&gt;</span><span class="comment">&lt;!-- Метаданные документа --&gt;</span>
                 
-                <span class="comment">&lt;!-- Подключение CSS --&gt;</span>
-                <span class="tag">&lt;style&gt;</span>
+                <span class="tag">&lt;meta</span> <span class="attribute">charset=</span><span class="value">"UTF-8"</span><span class="tag">&gt;</span> <span class="comment">&lt;!-- Кодировка символов --&gt;</span>
+                
+                
+                
+                
+                <span class="tag">&lt;meta </span><span class="attribute">name=</span><span class="value">"viewport"</span> <span class="attribute">content=</span><span class="value">"width=device-width, initial-scale=1.0"</span><span class="tag">&gt;</span>  
+                <span class="tag">&lt;title&gt;</span>Мой сайт <span class="tag">&lt;/title&gt;</span> <span class="comment">&lt;!-- Заголовок вкладки браузера --&gt;</span>
+               <span class="tag">&lt;style&gt;</span><span class="comment">&lt;!-- Подключение CSS --&gt;</span>
+                
+                
+                
+                
                 <span class="comment">/* Сброс стандартных отступов и полей */</span>
                 * {
                     <span class="property">margin</span>: 0;
@@ -117,10 +108,12 @@
                 <span class="tag">&lt;/body&gt;</span>
                 <span class="tag">&lt;/html&gt;</span>
             </div>
+            </pre>
+            
             
             <h2>Пример 2: Карточка товара</h2>
-            
-            <div class="code-block">
+            <pre>
+                 <div class="code-block">
             <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"product-card"</span><span class="tag">&gt;</span>
             <span class="tag">&lt;img</span> <span class="attribute">src=</span><span class="value">"product.jpg"</span> <span class="attribute">alt=</span><span class="value">"Название товара"</span> <span class="attribute">class=</span><span class="value">"product-image"</span><span class="tag">&gt;</span>
             <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"product-info"</span><span class="tag">&gt;</span>
@@ -201,116 +194,8 @@
                     </div>
                 </div>
             </div>
-            
-            <h2>Пример 3: Адаптивная навигация</h2>
-            
-            <div class="code-block">
-                    <span class="tag">&lt;nav</span> <span class="attribute">class=</span><span class="value">"navbar"</span><span class="tag">&gt;</span>
-                        <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"logo"</span><span class="tag">&gt;</span>МойСайт<span class="tag">&lt;/div&gt;</span>
-                        <span class="tag">&lt;ul</span> <span class="attribute">class=</span><span class="value">"nav-links"</span><span class="tag">&gt;</span>
-                            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Главная<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-                            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>О нас<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-                            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Услуги<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-                            <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute">href=</span><span class="value">"#"</span><span class="tag">&gt;</span>Контакты<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-                        <span class="tag">&lt;/ul&gt;</span>
-                        <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"burger"</span><span class="tag">&gt;</span>
-                            <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"line1"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
-                            <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"line2"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
-                            <span class="tag">&lt;div</span> <span class="attribute">class=</span><span class="value">"line3"</span><span class="tag">&gt;</span><span class="tag">&lt;/div&gt;</span>
-                        <span class="tag">&lt;/div&gt;</span>
-                    <span class="tag">&lt;/nav&gt;</span>
-
-                    <span class="tag">&lt;style&gt;</span>
-                    <span class="comment">/* Базовые стили навигации */</span>
-                    .navbar {
-                        <span class="property">display</span>: flex;
-                        <span class="property">justify-content</span>: space-between;
-                        <span class="property">align-items</span>: center;
-                        <span class="property">background-color</span>: <span class="value">#333</span>;
-                        <span class="property">color</span>: white;
-                        <span class="property">padding</span>: <span class="value">1rem 5%</span>;
-                    }
-                    
-                    .logo {
-                        <span class="property">font-size</span>: <span class="value">1.5rem</span>;
-                        <span class="property">font-weight</span>: bold;
-                    }
-                    
-                    .nav-links {
-                        <span class="property">display</span>: flex;
-                        <span class="property">justify-content</span>: space-around;
-                        <span class="property">width</span>: <span class="value">50%</span>;
-                    }
-                    
-                    .nav-links li {
-                        <span class="property">list-style</span>: none;
-                    }
-                    
-                    .nav-links a {
-                        <span class="property">color</span>: white;
-                        <span class="property">text-decoration</span>: none;
-                        <span class="property">padding</span>: <span class="value">0.5rem 1rem</span>;
-                        <span class="property">border-radius</span>: <span class="value">4px</span>;
-                        <span class="property">transition</span>: background-color <span class="value">0.3s</span>;
-                    }
-                    
-                    .nav-links a:hover {
-                        <span class="property">background-color</span>: <span class="value">#555</span>;
-                    }
-                    
-                    <span class="comment">/* Стили для бургер-меню (скрыты по умолчанию) */</span>
-                    .burger {
-                        <span class="property">display</span>: none;
-                        <span class="property">cursor</span>: pointer;
-                    }
-                    
-                    .burger div {
-                        <span class="property">width</span>: <span class="value">25px</span>;
-                        <span class="property">height</span>: <span class="value">3px</span>;
-                        <span class="property">background-color</span>: white;
-                        <span class="property">margin</span>: <span class="value">5px</span>;
-                        <span class="property">transition</span>: all <span class="value">0.3s ease</span>;
-                    }
-    
-                    <span class="comment">/* Медиазапрос для мобильных устройств */</span>
-                    @media screen and (max-width: 768px) {
-                    .nav-links {
-                        <span class="property">position</span>: absolute;
-                        <span class="property">right</span>: <span class="value">0</span>;
-                        <span class="property">height</span>: <span class="value">92vh</span>;
-                        <span class="property">top</span>: <span class="value">8vh</span>;
-                        <span class="property">background-color</span>: <span class="value">#333</span>;
-                        <span class="property">display</span>: flex;
-                        <span class="property">flex-direction</span>: column;
-                        <span class="property">align-items</span>: center;
-                        <span class="property">width</span>: <span class="value">50%</span>;
-                        <span class="property">transform</span>: translateX(<span class="value">100%</span>);
-                        <span class="property">transition</span>: transform <span class="value">0.5s ease-in</span>;
-                    }
-                    
-                    .nav-links.active {
-                        <span class="property">transform</span>: translateX(<span class="value">0%</span>);
-                    }
-                    
-                    .burger {
-                        <span class="property">display</span>: block;
-                    }
-                }
-                <span class="tag">&lt;/style&gt;</span>
-
-                <span class="tag">&lt;script&gt;</span>
-                    <span class="comment">// JavaScript для бургер-меню</span>
-                    const burger = document.querySelector('.burger');
-                    const navLinks = document.querySelector('.nav-links');
-                    
-                    burger.addEventListener('click', () => {
-                        navLinks.classList.toggle('active');
-                        
-                        <span class="comment">// Анимация бургер-иконки</span>
-                        burger.classList.toggle('toggle');
-                    });
-                <span class="tag">&lt;/script&gt;</span>
-            </div>
+            </pre>
+           
             
             <p>Эти примеры демонстрируют основные принципы работы с HTML и CSS. В следующем разделе мы узнаем, как опубликовать ваш сайт в интернете с помощью GitHub Pages.</p>
         </div>
