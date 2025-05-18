@@ -168,36 +168,72 @@
             <div class="code-example">
                 <pre>
                     /* Пример CSS-правила */
-                .container {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    padding: 20px;
-                    background-color: #f5f5f5;
-                    border-radius: 8px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-                }
+                    /* Основной контейнер для содержимого страницы */
+.container {
+    /* Максимальная ширина контейнера 1200px */
+    max-width: 1200px;
+    
+    /* Автоматические отступы по бокам (центрирование) */
+    margin: 0 auto;
+    
+    /* Внутренние отступы 20px со всех сторон */
+    padding: 20px;
+    
+    /* Цвет фона - светло-серый */
+    background-color: #f5f5f5;
+    
+    /* Скругление углов на 8px */
+    border-radius: 8px;
+    
+    /* Тень: смещение по X 0, по Y 2px, размытие 4px, цвет с прозрачностью */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-                .header {
-                    font-family: 'Arial', sans-serif;
-                    color: #333;
-                    text-align: center;
-                    margin-bottom: 30px;
-                }
+/* Стили для заголовка */
+.header {
+    /* Шрифт Arial или sans-serif, если Arial недоступен */
+    font-family: 'Arial', sans-serif;
+    
+    /* Цвет текста - темно-серый */
+    color: #333;
+    
+    /* Выравнивание текста по центру */
+    text-align: center;
+    
+    /* Отступ снизу 30px */
+    margin-bottom: 30px;
+}
 
-                .btn {
-                    display: inline-block;
-                    padding: 10px 20px;
-                    background-color: #3498db;
-                    color: white;
-                    text-decoration: none;
-                    border-radius: 4px;
-                    transition: background-color 0.3s;
-                }
+/* Стили для кнопки */
+.btn {
+    /* Отображение как строчно-блочный элемент */
+    display: inline-block;
+    
+    /* Внутренние отступы: 10px сверху/снизу, 20px слева/справа */
+    padding: 10px 20px;
+    
+    /* Цвет фона - голубой */
+    background-color: #3498db;
+    
+    /* Цвет текста - белый */
+    color: white;
+    
+    /* Убираем подчеркивание у ссылки */
+    text-decoration: none;
+    
+    /* Скругление углов на 4px */
+    border-radius: 4px;
+    
+    /* Плавное изменение цвета фона за 0.3 секунды */
+    transition: background-color 0.3s;
+}
 
-                .btn:hover {
-                    background-color: #2980b9;
-                }
-                </pre>                                   
+/* Стили для кнопки при наведении курсора */
+.btn:hover {
+    /* Цвет фона при наведении - более темный голубой */
+    background-color: #2980b9;
+}
+                </pre>                                 
             </div>
             
             <p>Это основные концепции и свойства CSS, которые позволят вам стилизовать вашу веб-страницу. В следующем разделе мы объединим HTML и CSS в практических примерах с подробными комментариями.</p>
